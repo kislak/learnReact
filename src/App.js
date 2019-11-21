@@ -42,7 +42,11 @@ class App extends React.Component {
           font: 'inherit',
           border: '1px solid blue',
           padding: '8px',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          ':hover': {
+              backgroundColor: 'lightgreen',
+              color: 'black',
+          }
       }
 
       if (this.state.showPersons) {
@@ -61,6 +65,10 @@ class App extends React.Component {
                   }
               </div>)
           style.backgroundColor = 'red';
+          style[':hover'] = {
+              backgroundColor: 'lightred',
+              color: 'black',
+          }
       }
 
       const classes = []
